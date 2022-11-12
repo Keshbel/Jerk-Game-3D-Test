@@ -29,11 +29,11 @@ public class MyPlayerController : NetworkBehaviour
     [SyncVar] public bool isInvincibilityMode;
     
     [Header("Movements")]
-    public float speed = 6f;
+    public float speed = 10f;
     public float turnSmoothTime = 0.01f;
     
     [SyncVar] public bool isDashing;
-    [Range(0.1f, 20f)] public float dashDistance = 5f;
+    [Range(0.1f, 20f)] public float dashDistance = 10f;
     
     private float _turnSmoothVelocity;
     private static readonly int SpeedAnim = Animator.StringToHash("speed");
@@ -246,7 +246,6 @@ public class MyPlayerController : NetworkBehaviour
     
     private IEnumerator GotDamageRoutine()
     {
-        print("GotDamage");
         if (isServer)
         {
             SetInvincibilityMode(true);

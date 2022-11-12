@@ -7,11 +7,11 @@ public class MeshTrail : NetworkBehaviour
     private MyPlayerController _myPlayerController;
 
     public GameObject prefab;
-    public float activeTime = 2f;
+    public float activeTime = 0.07f;
     
     [Header("Mesh Related")]
     public float meshRefreshRate = 0.1f;
-    public float meshDestroyDelay = 2f;
+    public float meshDestroyDelay = 0.001f;
     public Transform positionToSpawn;
 
     [Header("Shader Related")] 

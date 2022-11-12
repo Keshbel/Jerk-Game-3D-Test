@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="967d3d22-5293-40dd-be50-0e578a673b20" name="Default Changelist" comment="" />
+    <list default="true" id="967d3d22-5293-40dd-be50-0e578a673b20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jerk Game 3D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jerk Game 3D/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jerk Game 3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jerk Game 3D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/MyPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/MyPlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Visual/MeshTrail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Visual/MeshTrail.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/EndPanel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,11 +35,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/MPlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Visual/Trail.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Visual/MeshTrail.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/ExternalAssets/Mirror/Components/NetworkRoomPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/ExternalAssets/Mirror/Components/NetworkRoomManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LockCursorUnity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/PlayerNameChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Visual/MeshTrail.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/MyPlayerController.cs" />
       </list>
     </option>
@@ -83,7 +93,8 @@
       <option name="presentableId" value="Default" />
       <updated>1668139992560</updated>
       <workItem from="1668139995377" duration="26486000" />
-      <workItem from="1668222257159" duration="30279000" />
+      <workItem from="1668222257159" duration="30990000" />
+      <workItem from="1668286788781" duration="161000" />
     </task>
     <servers />
   </component>
