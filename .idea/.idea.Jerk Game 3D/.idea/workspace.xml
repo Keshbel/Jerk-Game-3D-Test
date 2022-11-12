@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="967d3d22-5293-40dd-be50-0e578a673b20" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/EndPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C399EFC0-8928-422D-8828-D74A2B19FFBA/27/c4c0f6a6/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E7F2B840-7DC4-41F2-8814-515D15959B55/93/a4acdf5b/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Jerk Game 3D_clone_0/Assets/Scripts/Common/MyPlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/MotionEffectScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/MotionEffect.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MeshTrail.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LookAtCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/EndPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/MPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Visual/Trail.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Visual/MeshTrail.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ExternalAssets/Mirror/Components/NetworkRoomPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/ExternalAssets/Mirror/Components/NetworkRoomManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/PlayerNameChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/MyPlayerController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2HNylk2BrtJTytOZxGDJD6j4NBJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Build\Jerk Game 3D.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Keshbel\Documents\GitHub\Jerk Game 3D\Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="967d3d22-5293-40dd-be50-0e578a673b20" name="Default Changelist" comment="" />
+      <created>1668139992560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668139992560</updated>
+      <workItem from="1668139995377" duration="26486000" />
+      <workItem from="1668222257159" duration="30279000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1668278273257">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1668278273257" />
+  </component>
+</project>
