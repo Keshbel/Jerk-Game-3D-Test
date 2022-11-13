@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Linq;
 using Cinemachine;
@@ -19,9 +20,10 @@ public class MyPlayerController : NetworkBehaviour
     public SkinnedMeshRenderer meshRenderer;
     public MeshTrail meshTrail;
     public TMP_Text playerNameText;
+    public TMP_Text playerHitCountText;
 
     [Header("Options")] 
-    [SyncVar(hook = nameof(CheckPlayerWin))] public int hitCount = 0;
+    [SyncVar(hook = nameof(UpdateHitCount))] public int hitCount = 0;
     [SyncVar(hook = nameof(UpdateColor))] public Color playerColor;
     
     [Header("Invincibility Mode")]
@@ -33,6 +35,7 @@ public class MyPlayerController : NetworkBehaviour
     public float turnSmoothTime = 0.01f;
     
     [SyncVar] public bool isDashing;
+    public bool isPushAway;
     [Range(0.1f, 20f)] public float dashDistance = 10f;
     
     private float _turnSmoothVelocity;
@@ -75,7 +78,7 @@ public class MyPlayerController : NetworkBehaviour
     {
         if (!isOwned) return;
         
-        if (Input.GetMouseButtonDown(0)) StartCoroutine(Dash());
+        if (Input.GetMouseButtonDown(0)) StartCoroutine(DashRoutine());
     }
 
     private void FixedUpdate()
@@ -92,7 +95,7 @@ public class MyPlayerController : NetworkBehaviour
 
         if (directionRawNormalized.magnitude >= 0.05f)
         {
-            if (!isDashing)
+            if (!isDashing && !isPushAway)
             {
                 float targetAngle = Mathf.Atan2(directionRawNormalized.x, directionRawNormalized.z) * Mathf.Rad2Deg +
                                     cam.eulerAngles.y;
@@ -114,9 +117,11 @@ public class MyPlayerController : NetworkBehaviour
 
     private void OnCollisionEnter(Collision hit)
     {
-        if (!hit.gameObject.CompareTag("Player") || isInvincibilityMode || !isOwned) return;
-        if (hit.gameObject.GetComponent<MyPlayerController>().isInvincibilityMode) return;
-
+        if (!hit.gameObject.CompareTag("Player") || !isOwned) return;
+        StartCoroutine(PushAwayRoutine());
+        if (hit.gameObject.GetComponent<MyPlayerController>().isInvincibilityMode || isInvincibilityMode ) return;
+        
+        
         if (isDashing)
         {
             if (isServer) AddHitCount();
@@ -140,14 +145,15 @@ public class MyPlayerController : NetworkBehaviour
         }
     }
     
-    private void Move(float multiSpeed = 1)
+    private void Move(float multiSpeed = 1 , bool isForward = true)
     {
-        _rigidbody.velocity = _moveDir * (speed * multiSpeed);
+        var side = isForward ? 1 : -1;
+        _rigidbody.velocity = _moveDir * (side * (speed * multiSpeed));
     }
 
-    private IEnumerator Dash()
+    private IEnumerator DashRoutine()
     {
-        if (isDashing || _direction.magnitude < Mathf.Abs(0.1f)) yield break;
+        if (isDashing || isPushAway || _direction.magnitude < Mathf.Abs(0.1f)) yield break;
         
         if (isServer) SetDashBool(true);
         else CmdSetDashBool(true);
@@ -184,6 +190,22 @@ public class MyPlayerController : NetworkBehaviour
         isDashing = false;
     }
 
+    private IEnumerator PushAwayRoutine()
+    {
+        if (isPushAway) yield break;
+        
+        var timeStart = Time.time;
+        isPushAway = true;
+        
+        while (Time.time - timeStart < 0.05f)
+        {
+            Move(dashDistance, false);
+
+            yield return null;
+        }
+
+        isPushAway = false;
+    }
     
     [Server]
     private void SetDashBool(bool isOn)
@@ -280,8 +302,10 @@ public class MyPlayerController : NetworkBehaviour
         playerNameText.color = newColor;
     }
 
-    private void CheckPlayerWin(int oldInt, int newInt)
+    private void UpdateHitCount(int oldInt, int newInt)
     {
+        playerHitCountText.text = newInt.ToString();
+
         if (newInt == 3)
         {
             StartCoroutine(GameManager.Instance.PlayerWin(this));
