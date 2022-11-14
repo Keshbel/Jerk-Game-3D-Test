@@ -113,6 +113,7 @@ namespace Mirror
 
         /// <summary>List of transforms populated by NetworkStartPositions</summary>
         public static List<Transform> startPositions = new List<Transform>();
+        public static List<Transform> startPositionsUsed = new List<Transform>();
         public static int startPositionIndex;
 
         [Header("Debug")]
@@ -743,6 +744,7 @@ namespace Mirror
 
             // reset all statics
             startPositions.Clear();
+            startPositionsUsed.Clear();
             startPositionIndex = 0;
             clientReadyConnection = null;
             loadingSceneAsync = null;
@@ -811,6 +813,7 @@ namespace Mirror
 
             startPositionIndex = 0;
             startPositions.Clear();
+            startPositionsUsed.Clear();
         }
 
         // This is only set in ClientChangeScene below...never on server.
@@ -1088,7 +1091,13 @@ namespace Mirror
 
             if (playerSpawnMethod == PlayerSpawnMethod.Random)
             {
-                return startPositions[UnityEngine.Random.Range(0, startPositions.Count)];
+                var position = startPositions[UnityEngine.Random.Range(0, startPositions.Count)];
+                while (startPositionsUsed.Contains(position))
+                {
+                    position = startPositions[UnityEngine.Random.Range(0, startPositions.Count)];
+                }
+                startPositionsUsed.Add(position);
+                return position;
             }
             else
             {

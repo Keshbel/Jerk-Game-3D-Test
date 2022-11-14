@@ -341,11 +341,11 @@ MonoBehaviour:
   onlineScene: Assets/Scenes/1_RoomScene.unity
   transport: {fileID: 365707147}
   networkAddress: localhost
-  maxConnections: 12
+  maxConnections: 4
   authenticator: {fileID: 0}
   playerPrefab: {fileID: 1190147523013294303, guid: 98b79460da1f6ee40803abe7bd16a31a, type: 3}
   autoCreatePlayer: 1
-  playerSpawnMethod: 1
+  playerSpawnMethod: 0
   spawnPrefabs: []
   timeInterpolationGui: 0
   showRoomGUI: 1

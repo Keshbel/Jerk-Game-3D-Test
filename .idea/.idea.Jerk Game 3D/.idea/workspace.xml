@@ -4,10 +4,10 @@
     <list default="true" id="967d3d22-5293-40dd-be50-0e578a673b20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jerk Game 3D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jerk Game 3D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jerk Game 3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jerk Game 3D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Mirror/Core/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Mirror/Core/NetworkManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Mirror/Examples/CCU/CCUNetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Mirror/Examples/CCU/CCUNetworkManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/0_MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/0_MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/MyPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/MyPlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +43,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/PlayerNameChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Visual/MeshTrail.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/MyPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/ExternalAssets/Mirror/Examples/CCU/CCUNetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ExternalAssets/Mirror/Core/NetworkManager.cs" />
       </list>
     </option>
   </component>
@@ -98,6 +100,7 @@
       <workItem from="1668286788781" duration="161000" />
       <workItem from="1668339963857" duration="3862000" />
       <workItem from="1668418688159" duration="640000" />
+      <workItem from="1668428683766" duration="1058000" />
     </task>
     <servers />
   </component>

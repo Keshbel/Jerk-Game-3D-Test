@@ -24,6 +24,7 @@ namespace Mirror.Examples.CCU
                 Destroy(position.gameObject);
 
             startPositions.Clear();
+            startPositionsUsed.Clear();
 
             // calculate sqrt so we can spawn N * N = Amount
             float sqrt = Mathf.Sqrt(spawnAmount);
