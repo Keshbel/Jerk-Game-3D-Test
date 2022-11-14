@@ -118,9 +118,8 @@ public class MyPlayerController : NetworkBehaviour
     private void OnCollisionEnter(Collision hit)
     {
         if (!hit.gameObject.CompareTag("Player") || !isOwned) return;
-        StartCoroutine(PushAwayRoutine());
         if (hit.gameObject.GetComponent<MyPlayerController>().isInvincibilityMode || isInvincibilityMode ) return;
-        
+        StartCoroutine(PushAwayRoutine());
         
         if (isDashing)
         {
@@ -199,7 +198,7 @@ public class MyPlayerController : NetworkBehaviour
         
         while (Time.time - timeStart < 0.05f)
         {
-            Move(dashDistance, false);
+            Move(dashDistance/3, false);
 
             yield return null;
         }
